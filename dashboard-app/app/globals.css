@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Page background */
+    --background: 216 25% 97%;  /* #F6F7FB */
+    
+    /* Card and surfaces */
+    --card: 0 0% 100%;  /* #FFFFFF */
+    --border: 225 14% 93%;  /* #E8EAF2 */
+    
+    /* Text colors */
+    --foreground: 222 47% 11%;  /* #0F172A */
+    --muted: 215 16% 47%;  /* #6B7280 */
+    
+    /* Brand colors - Blue/Indigo system */
+    --brand: 243 75% 59%;  /* #4F46E5 - main KPI blue */
+    --brand-light: 213 94% 68%;  /* #60A5FA - lighter blue */
+    --accent: 258 90% 66%;  /* #7C3AED - purple/indigo */
+    
+    /* Status colors */
+    --positive: 158 64% 52%;  /* #10B981 - green */
+    --negative: 0 84% 60%;  /* #EF4444 - red */
+    
+    /* Ring chart colors */
+    --ring-1: 243 75% 59%;  /* #4F46E5 */
+    --ring-2: 213 94% 68%;  /* #60A5FA */
+    --ring-3: 215 20% 65%;  /* #94A3B8 */
+    
+    /* Font variables */
+    --font-inter: 'Inter', system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --card: 224 71% 4%;
+    --border: 215 28% 17%;
+    --foreground: 210 40% 98%;
+    --muted: 215 16% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv11", "ss01";
+    font-variation-settings: "opsz" auto;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+  
+  .card-shadow-hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  /* Custom scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
