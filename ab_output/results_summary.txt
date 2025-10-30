@@ -1,0 +1,10 @@
+A/B test results
+        Metric   Gate 30   Gate 40  Difference  p_value Significant
+   retention_1  0.448188  0.442283   -0.005905 0.074410          No
+   retention_7  0.190201  0.182000   -0.008201 0.001554         Yes
+sum_gamerounds 52.456264 51.298776   -1.157488 0.375924          No
+
+Counts by group:
+version     n  retention_1_success  retention_7_success
+gate_30 44700                20034                 8502
+gate_40 45489                20119                 8279
