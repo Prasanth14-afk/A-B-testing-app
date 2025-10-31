@@ -8,7 +8,7 @@ This project combines statistical analysis with interactive data visualization t
 
 ## Live Demo
 
-Dashboard: [Your Vercel URL]
+Dashboard: [[Your Vercel URL](https://a-b-testing-app.vercel.app/)]
 Repository: https://github.com/Prasanth14-afk/A-B-testing-App
 
 ## Key Features
@@ -68,3 +68,4 @@ Repository: https://github.com/Prasanth14-afk/A-B-testing-App
 - GitHub (source control)
 
 ## Project Structure
+
